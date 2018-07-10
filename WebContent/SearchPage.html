@@ -1,0 +1,355 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>SearchPage</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles1.css">
+</head>
+
+<body>
+     <nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home<span class="sr-only"></span></a></li>
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="login.html">UserName</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+            <div class="mfp-with-anim mfp-hide mfp-dialog mfp-search-dialog" id="search-dialog">
+                <h3>Change your Filters</h3>
+                <form>
+                    
+                    <div class="col-md-2">
+                        <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-usd input-icon input-icon-highlight"></i>
+                            <label>Price Min</label>
+                            <input class="form-control" name="end" type="text" placeholder="50" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-usd input-icon input-icon-highlight"></i>
+                            <label>Price Max</label>
+                            <input class="form-control" name="end" type="text" placeholder="200" />
+                        </div>
+                    </div>
+                   
+                    <div class="input-daterange" data-date-format="M d, D">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-calendar input-icon input-icon-highlight"></i>
+                                    <label>Check-in</label>
+                                    <input class="form-control" name="start" type="text" />
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group form-group-lg form-group-icon-left"><i class="fa fa-calendar input-icon input-icon-highlight"></i>
+                                    <label>Check-out</label>
+                                    <input class="form-control" name="end" type="text" />
+                                </div>
+                            </div>          
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                                <div class="form-group form-group-lg form-group-select-plus">
+                                    <label>Bedrooms</label>
+                                    <div class="btn-group btn-group-select-num" data-toggle="buttons">
+                                        <label class="btn btn-primary active">
+                                            <input type="radio" name="options" />1</label>
+                                        <label class="btn btn-primary">
+                                            <input type="radio" name="options" />2</label>
+                                        <label class="btn btn-primary">
+                                            <input type="radio" name="options" />3</label>
+                                        <label class="btn btn-primary">
+                                            <input type="radio" name="options" />3+</label>
+                                    </div>
+                                    <select class="form-control hidden">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option selected="selected">4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>10+</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group form-group-lg form-group-select-plus">
+                                    <label>Bathrooms</label>
+                                    <div class="btn-group btn-group-select-num" data-toggle="buttons">
+                                        <label class="btn btn-primary active">
+                                            <input type="radio" name="options" />0</label>
+                                        <label class="btn btn-primary">
+                                            <input type="radio" name="options" />0.5</label>
+                                        <label class="btn btn-primary">
+                                            <input type="radio" name="options" />1</label>
+                                        <label class="btn btn-primary">
+                                            <input type="radio" name="options" />1.5+</label>
+                                    </div>
+                                    <select class="form-control hidden">
+                                        <option>0</option>
+                                        <option>0.5</option>
+                                        <option>1</option>
+                                        <option selected="selected">1.5</option>
+                                        <option>2</option>
+                                        <option>2.5</option>
+                                        <option>3</option>
+                                        <option>3+</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group form-group-lg form-group-select-plus">
+                                    <label>Accommodates</label>
+                                    <div class="btn-group btn-group-select-num" data-toggle="buttons">
+                                        <label class="btn btn-primary active">
+                                            <input type="radio" name="options" />1</label>
+                                        <label class="btn btn-primary">
+                                            <input type="radio" name="options" />2</label>
+                                        <label class="btn btn-primary">
+                                            <input type="radio" name="options" />3</label>
+                                        <label class="btn btn-primary">
+                                            <input type="radio" name="options" />3+</label>
+                                    </div>
+                                    <select class="form-control hidden">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option selected="selected">4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>10+</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group form-group-lg form-group-select-plus">
+                                    <label>Beds</label>
+                                    <div class="btn-group btn-group-select-num" data-toggle="buttons">
+                                        <label class="btn btn-primary active">
+                                            <input type="radio" name="options" />1</label>
+                                        <label class="btn btn-primary">
+                                            <input type="radio" name="options" />2</label>
+                                        <label class="btn btn-primary">
+                                            <input type="radio" name="options" />3</label>
+                                        <label class="btn btn-primary">
+                                            <input type="radio" name="options" />3+</label>
+                                    </div>
+                                    <select class="form-control hidden">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option selected="selected">4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>10+</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group form-group-lg ">
+                                    <label>Room Type</label>
+                                    <select>
+                                        <option>Private Room</option>
+                                        <option>Shared Room</option>
+                                        <option>Entire Home/APT</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="form-group form-group-lg ">
+                                    <label>City</label>
+                                    <select>
+                                        <option>Los Angeles</option>
+                                        <option>San Francisco</option>
+                                        <option>San Diego</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                    <button class="btn btn-primary btn-lg" type="submit">Search for Homestays</button>
+                </form>
+            </div>
+                
+                <div class="container">
+                    <div class="col-md-12">
+                <h3 class="booking-title">Here are your search results:</h3>
+                    <a class="popup-text" href="#search-dialog" data-effect="mfp-zoom-out">Filters</a>
+                
+                    <ul class="booking-list">
+                       
+                        <li>
+                            <a class="booking-item" href="#">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="booking-item-img-wrap">
+                                            <img src="images/hotel_the_cliff_bay_spa_suite_800x600.jpg" alt="Image Alternative text" title="hotel THE CLIFF BAY spa suite" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="booking-item-rating">
+                                             Rating: &nbsp;&nbsp;<span class="booking-item-rating-number"><b >4</b> of 5</span><small>(185 reviews)</small>
+                                        </div>
+                                        <h5 class="booking-item-title">Wellington Hotel</h5>
+                                        <p class="booking-item-address"><i class="fa fa-map-marker"></i> Long Island City, NY (Long Island City - Astoria)</p><small class="booking-item-last-booked">Neiborhood</small>
+                                    </div>
+                                    <div class="col-md-4"><span class="booking-item-price-from">from</span><span class="booking-item-price">$436</span><span>/night</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="btn btn-primary">Book Now</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="booking-item" href="#">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="booking-item-img-wrap">
+                                            <img src="images/hotel_the_cliff_bay_spa_suite_800x600.jpg" alt="Image Alternative text" title="hotel THE CLIFF BAY spa suite" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="booking-item-rating">
+                                             Rating: &nbsp;&nbsp;<span class="booking-item-rating-number"><b >4</b> of 5</span><small>(185 reviews)</small>
+                                        </div>
+                                        <h5 class="booking-item-title">Wellington Hotel</h5>
+                                        <p class="booking-item-address"><i class="fa fa-map-marker"></i> Long Island City, NY (Long Island City - Astoria)</p><small class="booking-item-last-booked">Neiborhood</small>
+                                    </div>
+                                    <div class="col-md-4"><span class="booking-item-price-from">from</span><span class="booking-item-price">$436</span><span>/night</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="btn btn-primary">Book Now</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="booking-item" href="#">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="booking-item-img-wrap">
+                                            <img src="images/hotel_the_cliff_bay_spa_suite_800x600.jpg" alt="Image Alternative text" title="hotel THE CLIFF BAY spa suite" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="booking-item-rating">
+                                             Rating: &nbsp;&nbsp;<span class="booking-item-rating-number"><b >4</b> of 5</span><small>(185 reviews)</small>
+                                        </div>
+                                        <h5 class="booking-item-title">Wellington Hotel</h5>
+                                        <p class="booking-item-address"><i class="fa fa-map-marker"></i> Long Island City, NY (Long Island City - Astoria)</p><small class="booking-item-last-booked">Neiborhood</small>
+                                    </div>
+                                    <div class="col-md-4"><span class="booking-item-price-from">from</span><span class="booking-item-price">$436</span><span>/night</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="btn btn-primary">Book Now</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="booking-item" href="#">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="booking-item-img-wrap">
+                                            <img src="images/hotel_the_cliff_bay_spa_suite_800x600.jpg" alt="Image Alternative text" title="hotel THE CLIFF BAY spa suite" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="booking-item-rating">
+                                             Rating: &nbsp;&nbsp;<span class="booking-item-rating-number"><b >4</b> of 5</span><small>(185 reviews)</small>
+                                        </div>
+                                        <h5 class="booking-item-title">Wellington Hotel</h5>
+                                        <p class="booking-item-address"><i class="fa fa-map-marker"></i> Long Island City, NY (Long Island City - Astoria)</p><small class="booking-item-last-booked">Neiborhood</small>
+                                    </div>
+                                    <div class="col-md-4"><span class="booking-item-price-from">from</span><span class="booking-item-price">$436</span><span>/night</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="btn btn-primary">Book Now</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="booking-item" href="#">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="booking-item-img-wrap">
+                                            <img src="images/hotel_the_cliff_bay_spa_suite_800x600.jpg" alt="Image Alternative text" title="hotel THE CLIFF BAY spa suite" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="booking-item-rating">
+                                             Rating: &nbsp;&nbsp;<span class="booking-item-rating-number"><b >4</b> of 5</span><small>(185 reviews)</small>
+                                        </div>
+                                        <h5 class="booking-item-title">Wellington Hotel</h5>
+                                        <p class="booking-item-address"><i class="fa fa-map-marker"></i> Long Island City, NY (Long Island City - Astoria)</p><small class="booking-item-last-booked">Neiborhood</small>
+                                    </div>
+                                    <div class="col-md-4"><span class="booking-item-price-from">from</span><span class="booking-item-price">$436</span><span>/night</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="btn btn-primary">Book Now</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+
+                    </ul>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+                </div>
+                            
+                
+
+
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/slimmenu.js"></script>
+        <script src="js/nicescroll.js"></script>
+        <script src="js/bootstrap-datepicker.js"></script>
+        <script src="js/bootstrap-timepicker.js"></script>
+        <script src="js/dropit.js"></script>
+        <script src="js/ionrangeslider.js"></script>
+        <script src="js/icheck.js"></script>
+        <script src="js/typeahead.js"></script>
+        <script src="js/card-payment.js"></script>
+        <script src="js/magnific.js"></script>
+        <script src="js/custom.js"></script>
+    </div>
+</body>
+
+
+</html>
+

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BookPage</title>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<script src="js/jquery.min.js"></script>
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>p.indent{ padding-bottom: 1.2em }</style>
+<style>p.indent1{ padding-bottom: 2.2em }</style>
+<script type="text/javascript">
+function disp_alert()
+{
+alert("You Have Successfully Booked This House!")
+}
+</script>
+<!-- </style> -->
+</head>
+	
+<body>
+	<nav class="navbar navbar-default">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	    </div>
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li><a href="index.html">Home<span class="sr-only"></span></a></li>
+	        
+	      </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="login.html">Login</a></li>
+	        <li><a href="signup.html">Sign Up</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+
+
+	<div class="container">
+	<div class="row">
+		<div class="col-md-7">
+		     <p class="indent1"></p>
+
+			<img src="images/resort.jpg" width="600" height="300">
+			<dl class="dl-horizontal">
+        			<dt>Address: </dt>
+        			<dd>2800 SW Williston RD, Gainesville, Florida</dd>
+     			</dl>
+
+			<div class="col-md-4">
+
+				<dl class="dl-horizontal">
+        			<dt>Rating: </dt>
+        			<dd>4.0</dd>
+        			<dt>Property Type: </dt>
+        			<dd>Cabin</dd>
+        			<dt>Bedrooms: </dt>
+        			<dd>3</dd>
+        			<dt>Beds: </dt>
+        			<dd>4</dd>
+     			</dl>
+			</div>
+			<div class="col-md-6">
+				<dl class="dl-horizontal">
+        			<dt>Reviews: </dt>
+        			<dd>10</dd>
+        			<dt>Room Type: </dt>
+        			<dd>Entire home/apt</dd>
+        			<dt>Bathrooms: </dt>
+        			<dd>1.5</dd>
+        			<dt>Bed Type: </dt>
+        			<dd>Air Bed</dd>
+     			</dl>
+			</div>
+			
+		</div>	
+		
+		<div class="col-md-5">
+			<div class="page-header">
+  			<h1>Name</h1>
+  			<small>
+  				<div style="display: inline-block;">
+  					Accommodates: 
+  				</div>
+  				<div style="display: inline-block;  width: 60px;">
+  					6
+  				</div>
+  				<div style="display: inline-block;">
+  					City:  
+  				</div>
+  				<div style="display: inline-block;  width: 120px;">
+  					Gainesville
+  				</div>
+  				<div style="display: inline-block;">
+  					Neighborhood:  
+  				</div>
+  				<div style="display: inline-block;">
+  					SouthWest
+  				</div>
+  			</small>
+			</div>
+
+			<div>
+				<dl class="dl-horizontal">
+      			<dt>Check In: </dt>
+      			<dd><input class="date" id="datepicker" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}"></dd>
+      			<p class="indent"></p>
+      			<dt>Check Out: </dt>
+      			<dd><input class="date" id="datepicker1" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}"></dd>
+     			</dl>
+			</div>
+
+            <p class="indent"></p>
+  
+     <dl class="dl-horizontal">
+      <dt>Price Per Night: </dt>
+      <dd>$ 100.00</dd>
+      <p class="indent"></p>
+      <dt>Cleaning Fee: </dt>
+      <dd>$ 50.00</dd>
+      <p class="indent"></p>
+      <dt>Total: </dt>
+      <dd>$ 250.00</dd>
+     </dl>
+     <p class="indent1"></p>
+	 <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Book Now</a></p> -->
+	 
+	 <button type="button" class="btn btn-primary btn-lg btn-block" onclick="disp_alert()">Book Now</button>	
+	 	
+
+        </div>
+
+      </div>
+
+       <div class="clearfix"> </div>
+       </div>
+
+</div>
+<link rel="stylesheet" href="css/jquery-ui.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+      <script>
+        $(function() {
+        $( "#datepicker,#datepicker1" ).datepicker();
+        });
+      </script>
+		</div>
+	</div>
+	</div>
+
+</body>
+</html>
